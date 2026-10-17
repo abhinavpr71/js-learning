@@ -13,3 +13,6 @@ function runningSum(nums){
 }
 
 console.log(runningSum(nums))
+
+
+******
