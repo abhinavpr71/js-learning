@@ -1,17 +1,16 @@
-let nums = [3,1,2,10,1]
+let nums = [1,2,3,4]
 
 function runningSum(nums){
-  let newNums = []
-  let runningTotal = nums[0]
-  newNums.push(runningTotal)
-  for (let i = 1 ; i < nums.length; ++i){
-    runningTotal = runningTotal + nums[i]
-    newNums.push(runningTotal)
-  }
- 
-  return newNums
+    let newarray = []
+    let runningTotal = 0
+   for (let i = 0; i < nums.length; i++){
+        runningTotal += nums[i]
+        newarray.push(runningTotal)
+   }
+
+   return newarray
 }
 
-console.log(runningSum(nums))
+runningSum(nums)
 
 
